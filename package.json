@@ -12,7 +12,7 @@
   "main": "index.js",
   "proxy": " 127.0.0.1:3000",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon index.js && nodemon npm run heroku postbuild",
     "build": "cd .. && cd frontend && npm run build",
     "install-clint": "cd .. && cd frontend && npm install",
     "heroku-postbuild": "npm run install-clint && npm run build"
